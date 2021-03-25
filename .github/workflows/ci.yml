@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   build-and-test:
     runs-on: ubuntu-20.04
-      strategy:
+    strategy:
       fail-fast: false
       matrix:
         # run 4 copies of the current job in parallel
